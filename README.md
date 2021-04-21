@@ -9,6 +9,16 @@ Description :
 - image.jpg : `your image that will be converted`
 - video.mp4 : `your video result`
 
+## Edit Video Length
+Command :
+```code
+ffmpeg -i input.mp4 -ss 00:00:00 -t 00:00:10 -async 1 result.mp4
+```
+Description :
+- input.mp4 : `your video that will be edited
+- 00:00.00 : `select start time`
+- 00.00.01 : `select end time`
+- result.mp4 : `vidio in selected start-end time`
 
 ## Editing Pitch
 Command :
