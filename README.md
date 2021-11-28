@@ -20,8 +20,12 @@ Description :
 - 00.00.01 : `select end time`
 - result.mp4 : `vidio in selected start-end time`
 
-## Editing Pitch
+## Combining Audio + Image
 Command :
 ```code
-command will be here
+ffmpeg -loop 1 -i image.jpg -i audio.mp3 -c:v libx264 -tune stillimage -c:a aac -b:a 192k -pix_fmt yuv420p -shortest out.mp4
 ```
+Description :
+- image.jpg : `your image that will be combined with the audio`
+- audio.mp3 : `your audio that will be combined with  the image`
+- out.mp4 : `video result`
