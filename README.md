@@ -29,3 +29,9 @@ Description :
 - image.jpg : `your image that will be combined with the audio`
 - audio.mp3 : `your audio that will be combined with  the image`
 - out.mp4 : `video result`
+
+## Trims video
+Command :
+```code
+ffmpeg -ss 00:01:00 -to 00:02:00 -i input.mp4 -c copy output.mp4
+```
