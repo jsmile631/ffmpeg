@@ -1,5 +1,13 @@
 # FFMPEG COMMAND
 
+## Converting video format to another video format
+Command
+```code
+ffmpeg -i input.mov -qscale 0 output.mp4
+```
+- input.mov : `video file which will be converted`
+- output.mp4 : `video file which has ben converted`
+
 ## Converting Image to Video
 Command : 
 ```code
