@@ -1,6 +1,13 @@
 # FFMPEG COMMAND
-
 ## Converting video format to another video format
+Command
+```code
+ffmpeg -i input.mp4 -vcodec libx265 -crf 28 output.mp4
+```
+- input.mov : `video file which will be compressed`
+- output.mp4 : `video file which has ben compressed`
+
+## Compressing to reduce file size
 Command
 ```code
 ffmpeg -i input.mov -qscale 0 output.mp4
