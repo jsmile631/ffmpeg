@@ -1,5 +1,11 @@
 # FFMPEG COMMAND
 
+## Change resolution from 4K to 1080
+Command
+```code
+ffmpeg -i input4kvid.mp4 -vf scale=1920:1080 -c:a copy output1080vid.mp4
+```
+
 ## Compressing to reduce file size
 Command
 ```code
